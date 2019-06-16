@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>神秘人</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Android</title>
+    <link rel="stylesheet" href="static/css/material.min.css">
+    <style>
+        body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .content {
+            background-color: rgb(243, 243, 243);
+        }
+
+        .mdl-layout__header {
+            background-color: #ffffff;
+        }
+
+        .mdl-textfield {
+            color: #000000;
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .content .block {
+            height: 620px;
+            overflow-y: scroll;
+        }
+
+        .mdl-layout__header-row {
+            padding: 0;
+        }
+
+        .logo {
+            margin: 0;
+            padding: 0;
+            margin-right: 5px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <div class="header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <dir class="logo">
+                    <img src="static/img/icon.png" alt="">
+                </dir>
+                <!-- Numeric Textfield with Floating Label -->
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="rid">
+                    <label class="mdl-textfield__label">直播间id...</label>
+                </div>
+                <button id="openlive" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                    打开直播间
+                </button>
+                <button id="clean" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                    清空
+                </button>
+            </div>
+        </div>
+
+        <div class="content mdl-layout__content">
+            <div id="livepanel" class="block mdl-typography--text-center">
+                <!-- <span class="mdl-chip">
+                    <span class="mdl-chip__text">神秘人「罗伯特2」进入房间</span>
+                </span>
+                <div class="logo-font ">「罗伯特2」进入房间</div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/material.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script type="text/javascript">
+        index.init();
+    </script>
+</body>
+
+</html>
