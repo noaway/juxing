@@ -3,6 +3,6 @@ Thumbs.db
 .idea/
 bind*
 output
-windows.syso
+*.syso
 bind_*
-output/
+juxing
