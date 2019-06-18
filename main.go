@@ -4,7 +4,7 @@ import (
 	"flag"
 
 	"github.com/asticode/go-astilectron"
-	"github.com/asticode/go-astilectron-bootstrap"
+	bootstrap "github.com/asticode/go-astilectron-bootstrap"
 	"github.com/asticode/go-astilog"
 	"github.com/pkg/errors"
 )
@@ -41,24 +41,24 @@ func main() {
 			Label: astilectron.PtrStr("Edit"),
 			SubMenu: []*astilectron.MenuItemOptions{
 				{
-					Label: astilectron.PtrStr("Cut"),
+					Label:       astilectron.PtrStr("Cut"),
 					Accelerator: astilectron.NewAccelerator("CmdOrCtrl+X"),
-					Role: astilectron.PtrStr("cut"),
+					Role:        astilectron.PtrStr("cut"),
 				},
 				{
-					Label: astilectron.PtrStr("Copy"),
+					Label:       astilectron.PtrStr("Copy"),
 					Accelerator: astilectron.NewAccelerator("CmdOrCtrl+C"),
-					Role: astilectron.PtrStr("copy"),
+					Role:        astilectron.PtrStr("copy"),
 				},
 				{
-					Label: astilectron.PtrStr("Paste"),
+					Label:       astilectron.PtrStr("Paste"),
 					Accelerator: astilectron.NewAccelerator("CmdOrCtrl+V"),
-					Role: astilectron.PtrStr("paste"),
+					Role:        astilectron.PtrStr("paste"),
 				},
 				{
-					Label: astilectron.PtrStr("Select All"),
+					Label:       astilectron.PtrStr("Select All"),
 					Accelerator: astilectron.NewAccelerator("CmdOrCtrl+A"),
-					Role: astilectron.PtrStr("selectall"),
+					Role:        astilectron.PtrStr("selectall"),
 				},
 			},
 		}},
@@ -69,8 +69,8 @@ func main() {
 			Options: &astilectron.WindowOptions{
 				BackgroundColor: astilectron.PtrStr("#333"),
 				Center:          astilectron.PtrBool(true),
-				MinHeight:          astilectron.PtrInt(680),
-				MinWidth:           astilectron.PtrInt(415),
+				MinHeight:       astilectron.PtrInt(680),
+				MinWidth:        astilectron.PtrInt(415),
 				Height:          astilectron.PtrInt(680),
 				Width:           astilectron.PtrInt(415),
 			},
