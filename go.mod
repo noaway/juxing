@@ -10,7 +10,7 @@ require (
 	github.com/asticode/go-astilectron-bundler v0.0.0-20190426172205-155c2a10bbb1 // indirect
 	github.com/asticode/go-astilog v1.0.0
 	github.com/asticode/go-bindata v0.0.0-20151023091102-a0ff2567cfb7 // indirect
-	github.com/gorilla/websocket v1.4.0
+	github.com/gorilla/websocket v1.4.1
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/pkg/errors v0.8.1
 	github.com/sam-kamerer/go-plister v1.1.2 // indirect
